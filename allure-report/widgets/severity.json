@@ -1,0 +1,1 @@
+[{"uid":"c96cfbe1259096d7","name":"Create an order ADIDAS ORIGINAL","time":{"start":1783931336330,"stop":1783931371381,"duration":35051},"status":"passed","severity":"normal"},{"uid":"a94621c5770ccfa0","name":"Create an order ZARA COAT 3","time":{"start":1783931336354,"stop":1783931367973,"duration":31619},"status":"broken","severity":"normal"}]
