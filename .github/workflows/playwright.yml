@@ -42,11 +42,11 @@ jobs:
 
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+    - name: Run Playwright tests
+
       env:
 
         PLAYWRIGHT_SERVICE_URL: ${{ vars.PLAYWRIGHT_SERVICE_URL }}
-        
-    - name: Run Playwright tests
 
       run: npx playwright test --config=playwright.service.config.js --workers=4
 
