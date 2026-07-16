@@ -56,7 +56,7 @@ test("API Mocking", async ({ page }) => {
         }
     )
     await page.locator("[data-testid='nav-events']").click()
-    await page.pause()
+  //  await page.pause()
 
     const allCards = await page.locator("[data-testid='event-card']")
     expect(await allCards.first()).toBeVisible()
@@ -70,7 +70,7 @@ test("API Mocking", async ({ page }) => {
     await expect(await banner.textContent()).toContain('9 bookings')
 })
 
-test.only("API Mocking TWO", async ({ page }) => {
+test("API Mocking TWO", async ({ page }) => {
 
 
 

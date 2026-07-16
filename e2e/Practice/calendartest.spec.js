@@ -9,7 +9,7 @@ test("CALENDAR TEST", async({page})=>
     await page.goto("https://rahulshettyacademy.com/seleniumPractise/#/offers")
     await page.locator(".react-date-picker--enabled").click()
 
-    await page.pause()
+    //await page.pause()
     await page.locator(".react-calendar__navigation__label").click()
      await page.locator(".react-calendar__navigation__label").click()
      await page.locator("div[class='react-calendar__decade-view__years']").getByText(year).click()

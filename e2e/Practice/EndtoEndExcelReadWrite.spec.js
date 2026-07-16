@@ -47,7 +47,7 @@ test("EXCEL EXERCISE", async({browser})=>
     await writeExcel(folderPath,"Kivi", "MYANMAR")
     const upload = page.locator(".upload")
     await upload.setInputFiles(folderPath)
-   await  page.pause()
+  // await  page.pause()
 
     
 
