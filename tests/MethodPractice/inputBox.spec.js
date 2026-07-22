@@ -21,7 +21,7 @@ test("Input Box", async ({ page }) => {
 
     await expect(await loginButton.toBeEnabled)
     await loginButton.click()
-    await page.waitForTimeout(4000)
+   // await page.waitForTimeout(3000)
 
 
 })
