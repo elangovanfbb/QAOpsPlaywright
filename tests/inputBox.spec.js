@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test"
 
-test.only("Input Box", async ({ page }) => {
+test("Input Box", async ({ page }) => {
     page.goto("https://eventhub.rahulshettyacademy.com/login")
 
     const userName = await page.getByPlaceholder("you@email.com")
@@ -15,12 +15,13 @@ test.only("Input Box", async ({ page }) => {
     await expect(password).toBeEditable()
     await expect(password).toBeEnabled()
 
-    await password.type("Elangovan@123")
+    await password.fill("Elangovan@123")
 
     const loginButton = await page.locator("[class*='login-submit-btn']")
 
     await expect(await loginButton.toBeEnabled)
-    loginButton.click()
+    await loginButton.click()
+    await page.waitForTimeout(4000)
 
 
 })
