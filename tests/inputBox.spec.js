@@ -1,4 +1,4 @@
-const{test, expect} = require('@playwright/test')
+import { test, expect } from "@playwright/test"
 
 test.only("Input Box", async ({ page }) => {
     page.goto("https://eventhub.rahulshettyacademy.com/login")
